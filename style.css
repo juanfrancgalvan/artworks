@@ -1,0 +1,125 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --gris-claro: #e0eafc;
+  --gris-oscuro: #222222;
+  --azul-claro: #6495ed;
+  --azul-oscuro: #252e37;
+}
+
+/* Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--gris-claro);
+}
+
+img {
+  width: 400px;
+}
+
+.contenedor {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: var(--azul-oscuro);
+  color: white;
+  padding: 80px 32px;
+}
+
+.encabezado h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+/* Principal */
+.principal .portada {
+  transition: all 0.3s ease;
+  background-color: var(--blanco);
+  margin: 16px 0;
+  border-radius: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.principal .portada:hover {
+  box-shadow: 0 1.6px 6.4px rgba(0, 0, 0, 0.3);
+}
+
+.principal .portada h2,
+.principal .portada p {
+  margin: 16px;
+}
+
+/* Pie de Página */
+.pie {
+  background-color: var(--gris-oscuro);
+  padding: 48px;
+  color: var(--blanco);
+}
+
+.pie .alinear {
+  float: right;
+}
+
+.pie p {
+  margin: 0;
+}
+
+.pie a {
+  transition: color 0.3s ease;
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.pie a:hover {
+  color: var(--azul-claro);
+}
+
+/* Responsivo */
+@media only screen and (width <= 576px) {
+  .encabezado h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .contenedor {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 290px;
+  }
+
+  .pie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pie p {
+    font-size: 12px;
+  }
+
+  .alinear {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
