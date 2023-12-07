@@ -39,7 +39,7 @@ img {
 .encabezado {
   background-color: var(--azul-oscuro);
   color: white;
-  padding: 80px 32px;
+  padding: 80px 30px;
 }
 
 .encabezado h1 {
@@ -95,7 +95,7 @@ img {
 /* Responsivo */
 @media only screen and (width <= 576px) {
   .encabezado h1 {
-    font-size: 48px;
+    font-size: 50px;
     text-align: center;
   }
 
