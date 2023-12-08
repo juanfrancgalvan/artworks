@@ -1,7 +1,5 @@
-/* Fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* Variables */
 :root {
   --blanco: #ffffff;
   --negro: #000000;
@@ -11,7 +9,6 @@
   --azul-oscuro: #252e37;
 }
 
-/* Globales */
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +32,6 @@ img {
   margin: 0 auto;
 }
 
-/* Encabezado */
 .encabezado {
   background-color: var(--azul-oscuro);
   color: white;
@@ -47,7 +43,6 @@ img {
   text-align: center;
 }
 
-/* Principal */
 .principal .portada {
   transition: all 0.3s ease;
   background-color: var(--blanco);
@@ -66,7 +61,6 @@ img {
   margin: 16px;
 }
 
-/* Pie de Página */
 .pie {
   background-color: var(--gris-oscuro);
   padding: 48px;
@@ -92,7 +86,7 @@ img {
   color: var(--azul-claro);
 }
 
-/* Responsivo */
+/* Celulares */
 @media only screen and (width <= 576px) {
   .encabezado h1 {
     font-size: 50px;
