@@ -38,7 +38,7 @@ img {
   padding: 80px 30px;
 }
 
-.encabezado h1 {
+.encabezado__logo {
   font-size: 80px;
   text-align: center;
 }
@@ -56,8 +56,8 @@ img {
   box-shadow: 0 1.6px 6.4px rgba(0, 0, 0, 0.3);
 }
 
-.principal .portada h2,
-.principal .portada p {
+.portada__titulo,
+.portada__texto {
   margin: 16px;
 }
 
@@ -71,24 +71,24 @@ img {
   float: right;
 }
 
-.pie p {
+.pie__texto {
   margin: 0;
 }
 
-.pie a {
+.pie__enlace {
   transition: color 0.3s ease;
   color: var(--blanco);
   text-decoration: none;
   margin: 10px;
 }
 
-.pie a:hover {
+.pie__enlace:hover {
   color: var(--azul-claro);
 }
 
 /* Celulares */
 @media only screen and (width <= 576px) {
-  .encabezado h1 {
+  .encabezado__logo {
     font-size: 50px;
     text-align: center;
   }
@@ -108,7 +108,7 @@ img {
     text-align: center;
   }
 
-  .pie p {
+  .pie__texto {
     font-size: 12px;
   }
 
