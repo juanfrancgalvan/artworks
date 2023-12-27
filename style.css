@@ -24,7 +24,7 @@ body {
 }
 
 img {
-  width: 400px;
+  width: 100%;
 }
 
 .contenedor {
@@ -94,12 +94,12 @@ img {
   }
 
   .contenedor {
-    max-width: 290px;
+    max-width: 80%;
     margin: 0 auto;
   }
 
   img {
-    width: 290px;
+    width: 100%;
   }
 
   .pie {
