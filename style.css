@@ -86,7 +86,6 @@ img {
   color: var(--azul-claro);
 }
 
-/* Celulares */
 @media only screen and (width <= 576px) {
   .encabezado__logo {
     font-size: 50px;
