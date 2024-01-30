@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  --blanco: #ffffff;
-  --negro: #000000;
-  --gris-claro: #e0eafc;
-  --gris-oscuro: #222222;
-  --azul-claro: #6495ed;
-  --azul-oscuro: #252e37;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #e0eafc;
+  --dark-gray: #222222;
+  --light-blue: #6495ed;
+  --dark-blue: #252e37;
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: var(--gris-claro);
+  background: var(--light-gray);
 }
 
 img {
@@ -34,8 +34,8 @@ img {
 }
 
 .header {
-  background-color: var(--azul-oscuro);
-  color: white;
+  background-color: var(--dark-blue);
+  color: var(--white);
   padding: 80px 30px;
 }
 
@@ -46,7 +46,7 @@ img {
 
 .cover {
   transition: all 0.3s ease;
-  background-color: var(--blanco);
+  background-color: var(--white);
   margin: 16px 0;
   border-radius: 8px;
   padding: 4px 0;
@@ -63,9 +63,9 @@ img {
 }
 
 .footer {
-  background-color: var(--gris-oscuro);
+  background-color: var(--dark-gray);
   padding: 48px;
-  color: var(--blanco);
+  color: var(--white);
 }
 
 .footer-text {
@@ -74,13 +74,13 @@ img {
 
 .footer-link {
   transition: color 0.3s ease;
-  color: var(--blanco);
+  color: var(--white);
   text-decoration: none;
   margin: 10px;
 }
 
 .footer-link:hover {
-  color: var(--azul-claro);
+  color: var(--light-blue);
 }
 
 .align {
