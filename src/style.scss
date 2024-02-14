@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --light-gray: #e0eafc;
-  --dark-gray: #222222;
-  --light-blue: #6495ed;
-  --dark-blue: #252e37;
-}
+$ligh-gray: #e0eafc;
+$dark-gray: #222222;
+$light-blue: #6495ed;
+$dark-blue: #252e37;
 
 * {
   margin: 0;
@@ -21,7 +17,7 @@ html {
 }
 
 body {
-  background: var(--light-gray);
+  background: $ligh-gray;
 }
 
 img {
@@ -34,8 +30,8 @@ img {
 }
 
 .header {
-  background-color: var(--dark-blue);
-  color: var(--white);
+  background-color: $dark-blue;
+  color: white;
   padding: 80px 30px;
 
   h1 {
@@ -46,7 +42,7 @@ img {
 
 .cover {
   transition: all 0.3s ease;
-  background-color: var(--white);
+  background-color: white;
   margin: 16px 0;
   border-radius: 8px;
   padding: 4px 0;
@@ -84,16 +80,16 @@ img {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .footer {
-  background-color: var(--dark-gray);
+  background-color: $dark-gray;
   padding: 48px;
-  color: var(--white);
+  color: white;
 
   div {
     float: right;
@@ -101,12 +97,12 @@ img {
 
   a {
     transition: color 0.3s ease;
-    color: var(--white);
+    color: white;
     text-decoration: none;
     margin: 10px;
 
     &:hover {
-      color: var(--light-blue);
+      color: $light-blue;
     }
   }
 }
