@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const galleryImages = document.querySelectorAll('img');
-  const modal = document.getElementById('modal');
-  const expandedImage = document.getElementById('expand-image');
-  const closeButton = document.getElementById('close');
+  const imagenes = document.querySelectorAll('img');
+  const modal = document.querySelector('#modal');
+  const expandirImagen = document.querySelector('#expandir-imagen');
+  const botonCerrar = document.querySelector('#cerrar');
 
-  galleryImages.forEach(img => {
+  imagenes.forEach(img => {
     img.addEventListener('click', function () {
       modal.style.display = 'block';
-      expandedImage.src = this.src;
+      expandirImagen.src = this.src;
     });
   });
 
-  closeButton.addEventListener('click', function () {
+  botonCerrar.addEventListener('click', function () {
     modal.style.display = 'none';
   });
 });

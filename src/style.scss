@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-$ligh-gray: #e0eafc;
-$dark-gray: #222222;
-$light-blue: #6495ed;
-$dark-blue: #252e37;
+$gris-claro: #e0eafc;
+$gris-oscuro: #222222;
+$azul-claro: #6495ed;
+$azul-oscuro: #252e37;
 
 * {
   margin: 0;
@@ -17,20 +17,15 @@ html {
 }
 
 body {
-  background: $ligh-gray;
+  background: $gris-claro;
 }
 
 img {
   width: 100%;
 }
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.header {
-  background-color: $dark-blue;
+.encabezado {
+  background-color: $azul-oscuro;
   color: white;
   padding: 80px 30px;
 
@@ -40,7 +35,12 @@ img {
   }
 }
 
-.cover {
+.contenedor {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.portada {
   transition: all 0.3s ease;
   background-color: white;
   margin: 16px 0;
@@ -76,7 +76,7 @@ img {
   }
 }
 
-.close {
+.cerrar {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -86,8 +86,8 @@ img {
   cursor: pointer;
 }
 
-.footer {
-  background-color: $dark-gray;
+.pie {
+  background-color: $gris-oscuro;
   padding: 48px;
   color: white;
 
@@ -102,18 +102,18 @@ img {
     margin: 10px;
 
     &:hover {
-      color: $light-blue;
+      color: $azul-claro;
     }
   }
 }
 
 @media only screen and (width <=576px) {
-  .header h1 {
+  .encabezado h1 {
     font-size: 50px;
     text-align: center;
   }
 
-  .container {
+  .contenedor {
     max-width: 80%;
     margin: 0 auto;
   }
@@ -126,7 +126,7 @@ img {
     }
   }
 
-  .footer {
+  .pie {
     display: flex;
     flex-direction: column;
     text-align: center;
