@@ -1,7 +1,7 @@
 {
-  "name": "portadas",
+  "name": "artworks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Artworks",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp"
