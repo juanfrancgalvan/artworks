@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll("img"),t=document.querySelector("#modal"),n=document.querySelector("#expand-image"),c=document.querySelector("#close");e.forEach(e=>{e.addEventListener("click",(function(){t.style.display="block",n.src=this.src}))}),c.addEventListener("click",(function(){t.style.display="none"}))}));
+//# sourceMappingURL=script.js.map

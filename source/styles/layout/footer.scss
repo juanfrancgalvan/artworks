@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+
+.footer {
+  background-color: v.$dark-gray;
+  padding: 48px;
+  color: v.$white;
+
+  div {
+    float: right;
+  }
+
+  a {
+    transition: color 0.3s ease;
+    color: v.$white;
+    text-decoration: none;
+    margin: 10px;
+
+    &:hover {
+      color: v.$light-blue;
+    }
+  }
+}
