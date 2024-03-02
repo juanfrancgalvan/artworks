@@ -23,6 +23,7 @@ function css(done) {
 function js(done) {
   src('source/scripts/**/*.js')
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(terser())
     .pipe(sourcemaps.write('.'))
     .pipe(dest('build/scripts'))
