@@ -54,13 +54,13 @@ function createCovers() {
       const overlay = document.createElement('div')
       overlay.classList.add('overlay')
       const image = document.createElement('img')
-      image.src = cover.cover;
+      image.src = cover.cover
       image.alt = `${cover.name} cover`
       overlay.appendChild(image)
       body.appendChild(overlay)
       
       // Close image
-      image.addEventListener('click', function closeImage() {
+      overlay.addEventListener('click', function closeImage() {
         overlay.remove()
       })
     })
