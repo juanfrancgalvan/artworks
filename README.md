@@ -10,6 +10,4 @@ https://www.threads.net/@juanfrancgalvan
 
 https://twitter.com/juanfrancgalvan
 
-https://github.com/juanfrancgalvan
-
 https://www.linkedin.com/in/juanfrancgalvan/
