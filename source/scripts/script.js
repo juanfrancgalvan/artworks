@@ -20,7 +20,7 @@ function createCovers() {
       image.alt = `${cover.name} cover`
       overlay.appendChild(image)
       body.appendChild(overlay)
-      
+
       overlay.addEventListener('click', function closeImage() {
         overlay.remove()
       })

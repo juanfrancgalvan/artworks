@@ -21,7 +21,7 @@ function css(done) {
 }
 
 function js(done) {
-  src('source/scripts/**/*.js')
+  src('source/scripts/*.js')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(terser())
@@ -31,17 +31,16 @@ function js(done) {
 }
 
 function images(done) {
-  const optimization = [imagemin.mozjpeg({quality: 10}), imagemin.optipng({optimizationLevel: 5})]
-  src('source/assets/images/**/*')
-    .pipe(imagemin(optimization))
+  src('source/assets/images/*')
+    .pipe(imagemin())
     .pipe(webp())
     .pipe(dest('build/assets/images'))
   done()
 }
 
 function dev(done) {
-  watch("source/styles/**/*.scss", css)
-  watch("source/scripts/**/*.js", js)
+  watch("source/styles/*.scss", css)
+  watch("source/scripts/*.js", js)
   done()
 }
 
@@ -49,5 +48,5 @@ exports.css = css
 exports.js = js
 exports.images = images
 
-exports.dev = parallel(css, js, dev)
+exports.default = parallel(css, js, dev)
 exports.convert = parallel(images)
