@@ -39,8 +39,8 @@ function images(done) {
 }
 
 function dev(done) {
-  watch("source/styles/*.scss", css)
-  watch("source/scripts/*.js", js)
+  watch("source/styles/**/*.scss", css)
+  watch("source/scripts/**/*.js", js)
   done()
 }
 
@@ -49,4 +49,3 @@ exports.js = js
 exports.images = images
 
 exports.default = parallel(css, js, dev)
-exports.convert = parallel(images)
