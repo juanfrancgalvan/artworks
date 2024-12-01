@@ -1,4 +1,10 @@
-function createCovers() {
+fetch("source/scripts/covers.json")
+.then(response => response.json())
+.then(data => {
+  createCovers(data)
+})
+
+function createCovers(covers) {
   const main = document.querySelector('main');
   covers.forEach(cover => {
     const section = document.createElement('section');
@@ -27,4 +33,3 @@ function createCovers() {
     })
   });
 }
-createCovers();
