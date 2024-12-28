@@ -12,7 +12,7 @@ function createCovers(covers) {
     section.innerHTML = `
       <h2>${cover.name}</h2>
       <p>Lorem ipsum dolor sit</p>
-      <img src="${cover.cover}" alt="${cover.name} cover">
+      <img src="${cover.cover}" alt="${cover.name} cover" width="300" height="200" loading="lazy">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       `;
     main.append(section);
